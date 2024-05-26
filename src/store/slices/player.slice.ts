@@ -1,17 +1,14 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { TZone } from '../types/timestamp';
 import type { RootState } from '..';
 
 interface IPlayerState {
   isPlay: boolean;
   playFrom: number;
-  events: TZone[];
 }
 
 const initialState: IPlayerState = {
   isPlay: false,
   playFrom: 0,
-  events: [],
 };
 
 const playerSlice = createSlice({
